@@ -3,6 +3,7 @@
 
 A web application that displays random dad jokes. Built with Angular (Frontend) and Spring Boot (Backend), with Docker support.
 
+![Screenshot](assets/images/screenshot.png)
 ---
 
 ##  Setup
