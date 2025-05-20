@@ -1,0 +1,31 @@
+<div class="container mt-5">
+  <h1 class="text-center mb-4">😂 Dad Jokes Generator</h1>
+
+  <div class="text-center mb-4">
+    <input type="number"
+          min="1"
+          [(ngModel)]="jokeCount"
+          class="form-control d-inline-block w-auto me-2"
+          placeholder="Number of jokes" />
+    <button (click)="getJoke()" class="btn btn-primary">
+      Get Dad Jokes
+    </button>
+  </div>
+
+  <div *ngIf="jokes.length > 0">
+    <h3 class="mb-3">Jokes:</h3>
+    <ul class="list-group">
+      <li *ngFor="let joke of jokes" class="list-group-item">
+        {{ joke }}
+      </li>
+    </ul>
+  </div>
+
+  <div *ngIf="errorMessage" class="alert alert-danger text-center">
+    {{ errorMessage }}
+  </div>
+
+  <div *ngIf="jokes.length === 0" class="text-muted text-center">
+    No jokes yet. Click the button above to get your first one!
+  </div>
+</div>
