@@ -1,14 +1,49 @@
-
+# === Angular ===
 dad-jokes-app-angular/node_modules/
 dad-jokes-app-angular/dist/
-dad-jokes-app-spring/target/
+dad-jokes-app-angular/.angular/
+dad-jokes-app-angular/.vscode/
+dad-jokes-app-angular/.env
+dad-jokes-app-angular/.env.local
+dad-jokes-app-angular/.editorconfig
 
+# === Spring Boot / Maven ===
+dad-jokes-app-spring/target/
+dad-jokes-app-spring/.mvn/
+dad-jokes-app-spring/.idea/
+dad-jokes-app-spring/*.iml
+dad-jokes-app-spring/*.log
+dad-jokes-app-spring/*.class
+dad-jokes-app-spring/.env
+
+# === IntelliJ IDEA ===
 .idea/
 *.iml
-*.class
 
+# === VS Code ===
+.vscode/
 
-*.log
-
+# === System files ===
 .DS_Store
 Thumbs.db
+
+# === Logs ===
+*.log
+
+# === Build tools ===
+build/
+out/
+
+# === OS / Misc ===
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# === Git ===
+*.orig
+*.rej
+
+# === Ignore by filename ===
+.gitattributes
+.editorconfig
